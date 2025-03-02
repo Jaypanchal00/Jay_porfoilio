@@ -116,22 +116,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        footer {
-            background-color: #1f1f1f;
-            /* Dark footer */
-        }
-
-        footer a:hover {
-            color: #ffcc00;
-        }
-
-
-        footer a {
-            color: #ffcc00;
-            /* Link color in footer */
-        }
-
         .skills-section {
             margin: 50px auto;
             max-width: 800px;
@@ -233,6 +217,36 @@
         box-shadow: 0px 0px 10px rgba(255, 200, 0, 0.8);
         transform: scale(1.05);
     }   
+    .footer-container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-top: 3px solid transparent;
+        border-image: linear-gradient(45deg, #ffcc00, #ff5500);
+        border-image-slice: 1;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .icon {
+        color: #FFD700;
+        font-size: 24px;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .icon:hover {
+        color: #ff5500;
+        transform: scale(1.2);
+    }
+
+
+
+
     </style>
 </head>
 
@@ -450,12 +464,16 @@
 </section>
 
     <!-- Footer -->
-    <footer class="text-center text-white py-4">
-        <p>&copy; 2024 Jay Panchal. All rights reserved.</p>
-        <a href="#" class="text-warning"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Jaypanchal00" class="text-warning ml-2 "><i class="fab fa-github"></i></a>
-        <a href="#" class="text-warning ml-2"><i class="fab fa-twitter"></i></a>
+    <footer class="footer-container text-center text-white py-4">
+        <p class="mb-2">&copy; 2024 <strong>Jay Panchal</strong>. All rights reserved.</p>
+        
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Jaypanchal00" class="icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
+   
 
 
     <button class="scroll-to-top" id="scrollTopBtn">
