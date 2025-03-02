@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Panchal - Luxury Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for Premium Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #121212;
+            /* Dark background */
+            color: #ffffff;
+            /* Light text color */
+        }
+
+
+
+        .navbar {
+            background-color: white;
+            /* White navbar */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #121212;
+            /* Dark text color in navbar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00;
+            /* Highlight color on hover */
+        }
+
+        h2 {
+            color: #ffcc00;
+            /* Gold color for section headers */
+        }
+
+        .btn-outline-light {
+            border-color: #ffcc00;
+            /* Button border color */
+        }
+
+        .btn-outline-light:hover {
+            background-color: #ffcc00;
+            /* Button hover color */
+            color: #121212;
+            /* Text color on hover */
+        }
+
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            /* Dark footer */
+        }
+
+        footer a:hover {
+            color: #ffcc00;
+        }
+
+
+        footer a {
+            color: #ffcc00;
+            /* Link color in footer */
+        }
+
+        .skills-section {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .skill-title {
+            margin-bottom: 15px;
+
+            font-size: 1.2rem;
+        }
+
+        .testimonial-card {
+            background-color: #1f1f1f;
+            border: 1px solid #ffcc00;
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h5 {
+            color: #1f1f1f;
+            ;
+        }
+
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #28a745;
+            /* Green background */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #218838;
+        }
+
+        .scroll-to-top i {
+            font-size: 20px;
+        }
+
+
+        #projects h2 {
+            font-style: bold;
+            font-size: 72px;
+            color: red;
+
+        }
+
+            
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar- bg-black">
+        <a class="navbar-brand" href="#">Jay's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section id="hero" class="d-flex justify-content-center align-items-center"
+        style="background-image: url('https://img.freepik.com/premium-vector/black-background-images-corporate-look-large-printing_822642-275.jpg?w=740'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
+
+        <div class="text-center text-white ">
+            <h1 style="color: rgb(0, 255, 255);" class="display-4">Jay Panchal</h1>
+            <p class="lead">Elevating Web Development</p>
+            <a href="#about" class="btn btn-outline-light btn-lg mt-3">Explore</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Jay 111.jpg" alt="Jay Panchal Portrait" class="img-fluid rounded-circle border border-primary" style="width: 350px; height: 350px;">
+
+
+
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2 class="display-4">About Me</h2>
+                <p>I am Jay Panchal, a web developer who specializes in crafting visually stunning and highly functional
+                    websites. My approach combines aesthetic appeal with functionality for an outstanding user
+                    experience.</p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-3">View Projects</a>
+                <div class="mt-4">
+                    <a href="Jay Resume.pdf" class="btn btn-outline-light btn-lg" download="Jay_Panchal_CV">Download
+                        CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <div id="skills" class="container skills-section">
+        <h2 class="text-center">My Skills</h2>
+        <div class="skill">
+            <div class="skill-title">HTML</div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+        <div class="skill mt-4">
+            <div class="skill-title">CSS</div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+        <div class="skill mt-4">
+            <div class="skill-title">Bootstrap</div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section with Parallax -->
+<!-- Projects Section with Parallax -->
+<section id="projects" class="parallax-section py-5"
+    style="background: url('https://images.unsplash.com/photo-1523878288860-7ad281611901?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; background-size: cover;">
+    <div class="container text-dark">
+        <h2 class="text-center text-dark display-4 mb-4">My Projects</h2>
+        <div class="row mt-5">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/premium-photo/business-development-strategy-results-concept_1237084-104335.jpg?w=740"
+                        class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">Luxury Web Design</h5>
+                        <p class="card-text text-muted">A sophisticated web design project focusing on high-end user
+                            experience.</p>
+                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1729651200~exp=1729654800~hmac=d9910b63ee563996c52140257b3b3c28fe1247083a450cf745338817611b33fa&w=740"
+                        class="card-img-top" alt="Project 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">Interactive UI/UX</h5>
+                        <p class="card-text text-muted">A project centered around rich interactions and user engagement.</p>
+                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?t=st=1729651323~exp=1729654923~hmac=c103581edec889f31790b83df73ebd7da5ae046040a84955537d99a953df9a25&w=740"
+                        class="card-img-top" alt="Project 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">E-commerce Site</h5>
+                        <p class="card-text text-muted">Developed a full-fledged e-commerce website with secure payment
+                            integration.</p>
+                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container my-5">
+        <h2 class="text-center">What My Clients Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>Client Name 1</h5>
+                    <p>"Jay transformed our online presence, exceeding our expectations!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>Client Name 2</h5>
+                    <p>"Professional and dedicated. Highly recommended!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>Client Name 3</h5>
+                    <p>"Creative solutions that truly reflect our brand!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Clients Section -->
+    <section id="happy-clients" class="container my-5">
+        <h2 class="text-center ">Happy Clients</h2>
+        <div class="row">
+            <div class="col-md-3 text-center happy-client">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Client 1"
+                    class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px;">
+                <h5 class="text-light">Client 1</h5>
+            </div>
+            <div class="col-md-3 text-center happy-client">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client 2"
+                    class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px;">
+                <h5 class="text-light">Client 2</h5>
+            </div>
+            <div class="col-md-3 text-center happy-client">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client 3"
+                    class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px;">
+                <h5 class="text-light">Client 3</h5>
+            </div>
+            <div class="col-md-3 text-center happy-client">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Client 4"
+                    class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px;">
+                <h5 class="text-light">Client 4</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center text-warning">Contact Me</h2>
+        <form class="mt-4">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-light">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4">
+        <p>&copy; 2024 Jay Panchal. All rights reserved.</p>
+        <a href="#" class="text-warning"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Jaypanchal00" class="text-warning ml-2 "><i class="fab fa-github"></i></a>
+        <a href="#" class="text-warning ml-2"><i class="fab fa-twitter"></i></a>
+    </footer>
+
+
+    <button class="scroll-to-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon for the arrow -->
+    </button>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Scroll to top functionality
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
