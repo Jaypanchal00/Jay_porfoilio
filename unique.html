@@ -20,24 +20,79 @@
             color: #ffffff;
             /* Light text color */
         }
-
-
-
         .navbar {
-            background-color: white;
-            /* White navbar */
+            background: linear-gradient(135deg, #111 30%, #222 100%);
+            padding: 15px 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f8b400;
+            letter-spacing: 1px;
+            transition: 0.3s ease;
+        }
+        
+        .navbar-brand:hover {
+            color: #f1c40f;
+            transform: scale(1.05);
         }
 
-        .navbar-brand,
-        .nav-link {
-            color: #121212;
-            /* Dark text color in navbar */
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #ddd;
+            margin: 0 10px;
+            position: relative;
+            transition: 0.3s ease;
         }
 
-        .navbar-nav .nav-link:hover {
-            color: #ffcc00;
-            /* Highlight color on hover */
+        /* Creative Hover Effect */
+        .navbar-nav .nav-link::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #f8b400;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
         }
+
+        .navbar-nav .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        /* Animated Toggler Icon */
+        .navbar-toggler-icon {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828859.png'); 
+            background-size: cover;
+            width: 25px;
+            height: 25px;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-nav {
+                background: rgba(0, 0, 0, 0.9);
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .navbar-nav .nav-link {
+                color: #f8b400;
+                padding: 10px;
+            }
+        }
+
+
+       
 
         h2 {
             color: #ffcc00;
@@ -146,10 +201,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar- bg-black">
-        <a class="navbar-brand" href="#">Jay's Portfoilio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg-">
+        <a class="navbar-brand" href="#">Jay's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -162,6 +216,7 @@
             </ul>
         </div>
     </nav>
+
 
     <!-- Hero Section with Background Image -->
     <section id="hero" class="d-flex justify-content-center align-items-center"
