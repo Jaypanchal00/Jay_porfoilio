@@ -20,12 +20,15 @@
             color: #ffffff;
             /* Light text color */
         }
+
+
+
         .navbar {
             background: linear-gradient(135deg, #111 30%, #222 100%);
             padding: 15px 20px;
             transition: all 0.3s ease;
         }
-        
+
         .navbar-brand {
             font-size: 1.8rem;
             font-weight: bold;
@@ -33,7 +36,7 @@
             letter-spacing: 1px;
             transition: 0.3s ease;
         }
-        
+
         .navbar-brand:hover {
             color: #f1c40f;
             transform: scale(1.05);
@@ -72,7 +75,7 @@
 
         /* Animated Toggler Icon */
         .navbar-toggler-icon {
-            background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828859.png'); 
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828859.png');
             background-size: cover;
             width: 25px;
             height: 25px;
@@ -92,7 +95,9 @@
         }
 
 
-       
+
+
+
 
         h2 {
             color: #ffcc00;
@@ -194,14 +199,12 @@
             color: red;
 
         }
-
-            
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg-">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Jay's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -220,20 +223,30 @@
 
     <!-- Hero Section with Background Image -->
     <section id="hero" class="d-flex justify-content-center align-items-center"
-        style="background-image: url('https://img.freepik.com/premium-vector/black-background-images-corporate-look-large-printing_822642-275.jpg?w=740'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
+        style="background-image: url('https://img.freepik.com/premium-vector/black-background-images-corporate-look-large-printing_822642-275.jpg?w=740'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh; position: relative;">
 
-        <div class="text-center text-white ">
-            <h1 style="color: rgb(0, 255, 255);" class="display-4">Jay Panchal</h1>
-            <p class="lead">Elevating Web Development</p>
-            <a href="#about" class="btn btn-outline-light btn-lg mt-3">Explore</a>
+        <!-- Overlay for better text visibility -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);">
+        </div>
+
+        <!-- Content -->
+        <div class="text-center text-white position-relative z-index-1">
+            <h1 class="display-4"
+                style="color: rgb(0, 255, 255); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase;">
+                Jay Panchal</h1>
+            <p class="lead" style="font-size: 1.5rem; font-weight: 300;">Elevating Web Development</p>
+            <a href="#about" class="btn btn-outline-light btn-lg mt-3"
+                style="border-radius: 50px; padding: 12px 30px; font-size: 1.2rem;">Explore</a>
         </div>
     </section>
+
 
     <!-- About Me Section -->
     <section id="about" class="container my-5">
         <div class="row">
             <div class="col-md-6">
-                <img src="Jay 111.jpg" alt="Jay Panchal Portrait" class="img-fluid rounded-circle border border-primary" style="width: 350px; height: 350px;">
+                <img src="Jay 111.jpg" alt="Jay Panchal Portrait" class="img-fluid rounded-circle border border-primary"
+                    style="width: 350px; height: 350px;">
 
 
 
@@ -280,55 +293,56 @@
     </div>
 
     <!-- Projects Section with Parallax -->
-<!-- Projects Section with Parallax -->
-<section id="projects" class="parallax-section py-5"
-    style="background: url('https://images.unsplash.com/photo-1523878288860-7ad281611901?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; background-size: cover;">
-    <div class="container text-dark">
-        <h2 class="text-center text-dark display-4 mb-4">My Projects</h2>
-        <div class="row mt-5">
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://img.freepik.com/premium-photo/business-development-strategy-results-concept_1237084-104335.jpg?w=740"
-                        class="card-img-top" alt="Project 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">Luxury Web Design</h5>
-                        <p class="card-text text-muted">A sophisticated web design project focusing on high-end user
-                            experience.</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+    <section id="projects" class="parallax-section py-5"
+        style="background: url('https://images.unsplash.com/photo-1523878288860-7ad281611901?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; background-size: cover;">
+        <div class="container text-dark">
+            <h2 class="text-center text-dark display-4 mb-4">My Projects</h2>
+            <div class="row mt-5">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://img.freepik.com/premium-photo/business-development-strategy-results-concept_1237084-104335.jpg?w=740"
+                            class="card-img-top" alt="Project 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-dark fs-4 fw-bold mb-3">Luxury Web Design</h5>
+                            <p class="card-text text-muted">A sophisticated web design project focusing on high-end user
+                                experience.</p>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1729651200~exp=1729654800~hmac=d9910b63ee563996c52140257b3b3c28fe1247083a450cf745338817611b33fa&w=740"
-                        class="card-img-top" alt="Project 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">Interactive UI/UX</h5>
-                        <p class="card-text text-muted">A project centered around rich interactions and user engagement.</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1729651200~exp=1729654800~hmac=d9910b63ee563996c52140257b3b3c28fe1247083a450cf745338817611b33fa&w=740"
+                            class="card-img-top" alt="Project 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-dark fs-4 fw-bold mb-3">Interactive UI/UX</h5>
+                            <p class="card-text text-muted">A project centered around rich interactions and user
+                                engagement.</p>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="col-md-4">
-                <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?t=st=1729651323~exp=1729654923~hmac=c103581edec889f31790b83df73ebd7da5ae046040a84955537d99a953df9a25&w=740"
-                        class="card-img-top" alt="Project 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-dark fs-4 fw-bold mb-3">E-commerce Site</h5>
-                        <p class="card-text text-muted">Developed a full-fledged e-commerce website with secure payment
-                            integration.</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?t=st=1729651323~exp=1729654923~hmac=c103581edec889f31790b83df73ebd7da5ae046040a84955537d99a953df9a25&w=740"
+                            class="card-img-top" alt="Project 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-dark fs-4 fw-bold mb-3">E-commerce Site</h5>
+                            <p class="card-text text-muted">Developed a full-fledged e-commerce website with secure
+                                payment
+                                integration.</p>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="container my-5">
